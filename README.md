@@ -1,4 +1,4 @@
-# ember-cli-deploy-consul-kv-index
+# @jumplead/ember-cli-deploy-consul-kv-index
 
 > An ember-cli-deploy plugin to upload and manage index.html in a Consul key/value store
 
@@ -27,7 +27,7 @@ To get up and running quickly, do the following:
 - Install this plugin
 
 ```bash
-$ ember install ember-cli-deploy-consul-kv-index
+$ ember install @jumplead/ember-cli-deploy-consul-kv-index
 ```
 
 - Place the following configuration into `config/deploy.js`
@@ -49,7 +49,7 @@ $ ember deploy production
 Run the following command in your terminal:
 
 ```bash
-ember install ember-cli-deploy-consul-kv-index
+ember install @jumplead/ember-cli-deploy-consul-kv-index
 ```
 
 ## ember-cli-deploy Hooks Implemented
@@ -198,7 +198,7 @@ The maximum number of recent revisions to keep in Consul.
 
 ## Activation
 
-As well as uploading a file to Consul, *ember-cli-deploy-consul-kv-index* has
+As well as uploading a file to Consul, *@jumplead/ember-cli-deploy-consul-kv-index* has
 the ability to mark a revision of a deployed file as `active`. This is most
 commonly used in the [lightning method of deployment][1] whereby an index.html
 file is pushed to Consul and then served to the user by a web server. The web
@@ -234,7 +234,7 @@ ENV.pipeline = {
 
 ### What does activation do?
 
-When *ember-cli-deploy-consul-kv-index* uploads a file to Consul, it uploads it
+When *@jumplead/ember-cli-deploy-consul-kv-index* uploads a file to Consul, it uploads it
 under the key defined by a combination of the two config properties
 `namespaceToken` and `revisionKey`.
 
